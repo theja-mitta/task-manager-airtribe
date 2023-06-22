@@ -37,7 +37,7 @@ To use this API, follow these steps:
    npm start
    ```
 
-   The server will start running on `http://localhost:3002`.
+   The server will start running on `http://localhost:3000`.
 
 ## API Endpoints
 
@@ -65,7 +65,8 @@ The following endpoints are available in the Task Manager API:
 
 - Method: POST
 - URL: `/tasks`
-- Request Body: JSON object containing task details (`title`, `description`, `completed`)
+- Request Body: JSON object containing task details (`id`, `title`, `description`, `completed`)
+- Sample request body - {"id":1,"title":"Title goes here","description":"Description goes here","completed":true,"priority":"low/medium/high"}
 
 ### Update an existing task by its ID
 
